@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parquímetro </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="painel">
+        <h1>Parquímetro</h1>
+        <p class="instrucoes">Insira o valor para calcular o tempo de permanência.</p>
+        
+        <div class="controles">
+            <input type="number" id="valorPago" placeholder="Min. R$1,00" min="0" step="0.01">
+            <button onclick="appParquimetro.processarPagamento()">Emitir Ticket</button>
+        </div>
+
+        <div id="resultado" class="resultado oculta">
+            <p id="msgTempo"></p>
+            <p id="msgTroco"></p>
+        </div>
+        
+        <p id="msgErro" class="erro"></p>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
